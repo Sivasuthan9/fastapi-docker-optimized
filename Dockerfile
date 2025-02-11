@@ -6,7 +6,7 @@ COPY . /app/
 
 RUN pip install poetry 
 
-RUN poetry install --no-root
+RUN poetry install --no-root --without dev
 
 EXPOSE 8000
 
