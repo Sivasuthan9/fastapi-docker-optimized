@@ -1,6 +1,5 @@
 # Optimized Docker Image with Poetry
 
-## Overview
 This project demonstrates an optimized approach to building Docker images for Python applications using Poetry. The goal is to reduce build times and image size while maintaining reproducibility and efficiency.
 
 ## Optimization Techniques Used
