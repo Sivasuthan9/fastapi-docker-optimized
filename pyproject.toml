@@ -23,3 +23,11 @@ black = "^25.1.0"
 flake8 = "^7.1.1"
 pytest = "^8.3.4"
 
+[tool.isort]
+profile = "black"
+skip = ['.venv']
+
+[tool.black]
+line-length = 120
+exclude = '\.venv'
+
