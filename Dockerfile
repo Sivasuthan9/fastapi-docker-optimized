@@ -1,13 +1,13 @@
-FROM python:3.11-slim
+FROM python:3.10-slim
 
 WORKDIR /app
 
 COPY . /app/
 
-RUN sudo apt update && sudo apt install -y poetry 
+RUN pip install poetry 
 
-RUN poetry install --no-dev --no-root
+RUN poetry install --no-root
 
 EXPOSE 8000
 
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["poetry", "run", "python", "server.py"]
