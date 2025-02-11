@@ -1,0 +1,25 @@
+[project]
+name = "fastapi-docker-optimized"
+version = "0.1.0"
+description = "sample"
+authors = [
+    {name = "Sivasuthan9",email = "sivasuthans.20@uom.lk"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.0"
+black = "^25.1.0"
+flake8 = "^7.1.1"
+pytest = "^8.3.4"
+
